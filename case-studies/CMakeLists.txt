@@ -7,6 +7,13 @@ macro(build_analysis dir)
   set(lib_name "FCCAnalysis_${dir}")
   #--- generate the ROOT dictionary using a REFLEX selection
   set(CMAKE_ROOTTEST_NOROOTMAP OFF)
+
+  add_library(lib${lib_name} SHARED ${sources} ${headers} lib${lib_name}.cxx)
+  target_include_directories(lib${lib_name} PUBLIC ${dir}/include
+                                                $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+                                                $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/addons>
+                                                $<INSTALL_INTERFACE:include>)
+  target_link_libraries(lib${lib_name} PUBLIC FCCAnalyses)
   reflex_generate_dictionary(lib${lib_name} ${headers} ${classes}
                              SELECTION ${reflex_sel})
   #--- build the analysis library (linked against FCCAnalyses)

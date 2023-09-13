@@ -53,6 +53,7 @@ target_include_directories(FCCAnalyses  PUBLIC
                            ${DELPHES_INCLUDE_DIR}
                            ${DELPHES_EXTERNALS_INCLUDE_DIR}
                            ${DELPHES_EXTERNALS_TKCOV_INCLUDE_DIR}
+                           $<TARGET_FILE_DIR:EDM4HEP::edm4hep>/../include
                            )
 
 message(STATUS " ====== DELPHES LIBRARY = " ${DELPHES_LIBRARY} )

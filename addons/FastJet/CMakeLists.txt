@@ -11,6 +11,11 @@ fccanalyses_addon_build(FastJet
                                  ROOT::MathCore
                         INSTALL_COMPONENT fastjet)
 
+target_include_directories(FastJet PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/..
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/../../analyzers/dataframe
+)
+
 add_custom_command(TARGET FastJet POST_BUILD
                    COMMAND ${CMAKE_COMMAND} -E copy
                    ${CMAKE_CURRENT_SOURCE_DIR}/python/*

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705049570107,
+  "lastUpdate": 1705049572076,
   "repoUrl": "https://github.com/jmcarcell/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -28818,6 +28818,60 @@ window.BENCHMARK_DATA = {
             "unit": "Seconds",
             "range": 10,
             "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jmcarcell@users.noreply.github.com",
+            "name": "jmcarcell",
+            "username": "jmcarcell"
+          },
+          "committer": {
+            "email": "jmcarcell@users.noreply.github.com",
+            "name": "jmcarcell",
+            "username": "jmcarcell"
+          },
+          "distinct": true,
+          "id": "f81dffb78a8726085ea39c5e18a9e68c1b2028f5",
+          "message": "Fix building with ACTS 31",
+          "timestamp": "2024-01-12T09:38:36+01:00",
+          "tree_id": "43c9fced4986175d08597a532bae8dc767e9edab",
+          "url": "https://github.com/jmcarcell/FCCAnalyses/commit/f81dffb78a8726085ea39c5e18a9e68c1b2028f5"
+        },
+        "date": 1705049571263,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "prod | Events processed per second: examples/FCCee/weaver/analysis_inference.py",
+            "value": 2.1157466840394847,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 8.713062222875527,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 7.42942653766735,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 5.921453977804176,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 7.460702919817469,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 2.881452830662833,
+            "unit": "Evt/s"
           }
         ]
       }

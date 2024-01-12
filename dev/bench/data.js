@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705051359918,
+  "lastUpdate": 1705051403003,
   "repoUrl": "https://github.com/jmcarcell/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -28992,6 +28992,72 @@ window.BENCHMARK_DATA = {
             "name": "prod | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
             "value": 3.195895335323834,
             "unit": "Evt/s"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jmcarcell@users.noreply.github.com",
+            "name": "jmcarcell",
+            "username": "jmcarcell"
+          },
+          "committer": {
+            "email": "jmcarcell@users.noreply.github.com",
+            "name": "jmcarcell",
+            "username": "jmcarcell"
+          },
+          "distinct": true,
+          "id": "9df72c540ab5ed19351d3dd7e95fcc92e4ba92d1",
+          "message": "Fix building with ACTS 31",
+          "timestamp": "2024-01-12T10:15:19+01:00",
+          "tree_id": "ac1a8c13a1dfb482dd9eacde55dc495aa455c578",
+          "url": "https://github.com/jmcarcell/FCCAnalyses/commit/9df72c540ab5ed19351d3dd7e95fcc92e4ba92d1"
+        },
+        "date": 1705051399081,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/weaver/analysis_inference.py",
+            "value": 32.45936989784241,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/weaver/analysis_inference.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 10.298444509506226,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: case-studies/analysis_example/scripts/analysis_example.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 11.61122727394104,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 15.041791439056396,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/test/jet_constituents.py",
+            "value": 10.915592432022095,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/test/jet_constituents.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 31.76729965209961,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
           }
         ]
       }
